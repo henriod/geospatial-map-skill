@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Kenya County Audit Explorer — Auditor-General 2023/2024</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- MapLibre GL JS (open source) via CDN. Renders in EPSG:3857 internally;
+       all data is supplied in EPSG:4326 (lng/lat). -->
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" />
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <aside id="panel">
+      <header>
+        <h1>Kenya County Audit Explorer</h1>
+        <p class="sub">Auditor-General's Summary Report on County Governments, FY 2023/2024</p>
+      </header>
+
+      <section class="control">
+        <label for="metric">Colour counties by</label>
+        <select id="metric"></select>
+        <p id="metric-desc" class="desc"></p>
+      </section>
+
+      <section id="legend" class="legend"></section>
+
+      <section id="details" class="details">
+        <p class="hint">Click a county to see its audit figures.</p>
+      </section>
+
+      <footer>
+        <p>Geometry: <a href="https://gadm.org" target="_blank" rel="noopener">GADM 4.1</a> county boundaries (EPSG:4326).</p>
+        <p>Figures: Office of the Auditor-General (Kenya), County Governments Summary Report 2023/2024 — Appendices 1–5. Amounts in Kenya Shillings.</p>
+      </footer>
+    </aside>
+    <div id="map"></div>
+  </div>
+  <script src="map.js"></script>
+</body>
+</html>
