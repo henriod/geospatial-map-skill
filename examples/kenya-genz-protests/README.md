@@ -2,6 +2,8 @@
 
 An interactive map of Gen Z demonstration hotspots in Kenya, June 2024 → present, scaffolded with the [`map-init`](../../skill/map-init/SKILL.md) skill.
 
+![Kenya Gen Z demonstration hotspots map](../../docs/img/kenya-genz-hots-map.png)
+
 ## Run it
 
 ```bash

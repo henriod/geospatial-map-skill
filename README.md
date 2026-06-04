@@ -4,6 +4,10 @@ A [Claude Code](https://claude.com/claude-code) **Skill** that scaffolds standar
 
 The skill, `map-init`, encodes open-source-first geospatial engineering standards so that every map you scaffold uses the right stack, the right coordinate reference systems, and **verified** data sources by default — no Mapbox tokens, no fabricated coordinates, no rainbow ramps.
 
+![Kenya Gen Z demonstration hotspots map — MapLibre GL JS, CARTO Positron basemap, dark national boundary, and intensity-scaled markers](docs/img/kenya-genz-hots-map.png)
+
+> The example map: Gen Z demonstration hotspots across Kenya, sized and coloured by reported intensity. Built entirely by the `map-init` skill.
+
 ---
 
 ## What's in here
