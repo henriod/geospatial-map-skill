@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kenya Gen Z Demonstration Hotspots — June 2024 to date</title>
+
+  <!-- MapLibre GL JS (open-source, no access token required) -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="map"></div>
+
+  <div id="panel">
+    <h1>Kenya Gen Z Demonstrations</h1>
+    <p class="subtitle">Hotspots, June 2024 &rarr; present</p>
+    <div id="legend"></div>
+    <p class="note">
+      Marker size &amp; colour reflect the relative scale/intensity of
+      demonstrations reported at each location. Locations are approximate
+      (county / town centroids) and compiled from public news reporting for
+      illustrative purposes &mdash; see <code>data.js</code> for sources.
+    </p>
+  </div>
+
+  <!-- MapLibre GL JS -->
+  <script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+  <script src="data.js"></script>
+  <script src="map.js"></script>
+</body>
+</html>

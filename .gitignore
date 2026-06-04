@@ -1,0 +1,13 @@
+# Claude Code local config (machine-specific; skill source lives in skill/)
+.claude/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Python http.server / tooling
+__pycache__/
+*.log
