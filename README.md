@@ -116,7 +116,3 @@ This honesty about provenance is a core rule of the skill, not an afterthought.
 - **Code & skill**: [MIT](LICENSE).
 - **`examples/kenya-genz-protests/kenya.geojson`**: © [geoBoundaries](https://www.geoboundaries.org), licensed **CC BY 4.0** — attribution retained in the map and here.
 - Basemap © [CARTO](https://carto.com/attributions) & © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors.
-
----
-
-*Built with [Claude Code](https://claude.com/claude-code).*
