@@ -17,7 +17,7 @@ and they want a runnable starting point.
 1. **Confirm the essentials** (ask only if not already given):
    - Map library: **MapLibre GL JS** (default). Leaflet is acceptable for simple raster-only maps. Never use Mapbox GL unless the user explicitly requests it (requires a paid access token).
    - Initial view: center `[lng, lat]` and zoom level. Default to a world view (`[0, 0]`, zoom `2`) if unspecified.
-   - Basemap (default: **CARTO Positron** via MapLibre style). Other acceptable defaults: CARTO Voyager, CARTO Dark Matter, OpenStreetMap raster, OpenTopoMap.
+   - Basemap (default: **OpenFreeMap Positron** via MapLibre style, no API key). Other acceptable defaults: OpenFreeMap Liberty, Bright, or Dark (`https://tiles.openfreemap.org/styles/{liberty|bright|dark}`), OpenStreetMap raster, OpenTopoMap. Do not use CARTO basemaps - they now require an API key.
    - CRS context: web maps always render in **EPSG:3857**; all data exchange uses **EPSG:4326**.
 
 2. **Scaffold the files** in the project root:
@@ -59,7 +59,7 @@ Never invent or approximate geometry. If a location cannot be verified, omit it 
 ## Default Stack
 
 - **Mapping**: MapLibre GL JS (CDN)
-- **Basemap**: CARTO Positron (`https://basemaps.cartocdn.com/gl/positron-gl-style/style.json`)
+- **Basemap**: OpenFreeMap Positron (`https://tiles.openfreemap.org/styles/positron`) - free, no key; attribution: © [OpenFreeMap](https://openfreemap.org) © [OpenMapTiles](https://www.openmaptiles.org/) Data from [OpenStreetMap](https://www.openstreetmap.org/copyright)
 - **Data formats**: GeoJSON (starter), FlatGeobuf / GeoParquet for production scale
 - **Backend (if needed)**: FastAPI + Python
 - **Database (if needed)**: PostgreSQL + PostGIS
